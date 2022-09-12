@@ -180,9 +180,17 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
     love_month = int(config["love_date"].split("-")[1])
     love_day = int(config["love_date"].split("-")[2])
     love_date = date(love_year, love_month, love_day)
+    
+    
+    love_year1 = int(config["love_date1"].split("-")[0])
+    love_month1 = int(config["love_date1"].split("-")[1])
+    love_day1 = int(config["love_date1"].split("-")[2])
+    love_date1 = date(love_year1, love_month1, love_day1)
+    
 
     # 获取在一起的日期差
     love_days = str(today.__sub__(love_date)).split(" ")[0]
+    love_days1 = str(today.__sub__(love_date)).split(" ")[0]
 
     # 获取所有生日数据
     birthdays = {}
@@ -217,6 +225,10 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
             },
             "love_day": {
                 "value": love_days,
+                "color": get_color()
+            },
+            "love_day2": {
+                "value": love_days1,
                 "color": get_color()
             },
             "note_en": {
