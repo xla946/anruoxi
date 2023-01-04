@@ -190,7 +190,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
 
     # 获取在一起的日期差
     love_days = str(today.__sub__(love_date)).split(" ")[0]
-    love_days1 = str(today.__sub__(love_date)).split(" ")[0]
+    love_days1 = str(today.__sub__(love_date1)).split(" ")[0]
 
     # 获取所有生日数据
     birthdays = {}
