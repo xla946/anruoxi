@@ -24,7 +24,7 @@
 "love_date1": "2019-08-01",
 
 # 金句中文，如果为空，默认会读取金山的每日金句
-"note_ch": "",
+"note_ch": "小美，女神节快乐哈！",
 # 金句英文
-"note_en": ""
+"note_en": "hope happy every day"
 }
