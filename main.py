@@ -224,11 +224,11 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "color": get_color()
             },
             "love_day": {
-                "value": abs(int(love_day)),
+                "value": abs(int(love_days)),
                 "color": get_color()
             },
             "love_day2": {
-                "value": abs(int(love_day1)),
+                "value": abs(int(love_days1)),
                 "color": get_color()
             },
             "note_en": {
